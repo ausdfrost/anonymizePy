@@ -11,7 +11,7 @@ As part of a research project, I was working on developing methods to anonymize 
 2. Install neccecary model: `pip install https://huggingface.co/beki/en_spacy_pii_distilbert/resolve/main/en_spacy_pii_distilbert-any-py3-none-any.whl`
 
 ### 🧑‍🔬 How to use anonymizePy
-Once anonymizePy is installed, you can run [example.py](example.py) to get an idea on how anonymizePy works!
+Once anonymizePy is installed, you can run [https://github.com/ausdfrost/anonymizePy/blob/main/example.py](example.py) to get an idea on how anonymizePy works!
 
 ---
 A package by Aussie Frost. Last updated 6/6/2024. Thanks for viewing!
