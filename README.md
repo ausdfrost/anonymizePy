@@ -1,5 +1,7 @@
 # anonymizePy: *anonymize your data with ease*
 
+[![PyPI version](https://img.shields.io/pypi/v/anonymizePy?color=0071B6)](https://pypi.org/project/anonymizePy/)
+
 ### 🤔 What is anonymizePy?
 As part of a research project, I was working on developing methods to anonymize data for a local crisis response team. I quickly realized the greater potential for an easy (it's only three steps!) tool to allow people of all skill levels to leverage methods such as named entity recognition, regular expressions, and more to anonymize their data. anonymizePy is a tool that allows anyone to *anonymize their data* ✨.
 
