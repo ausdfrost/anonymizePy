@@ -30,8 +30,6 @@ import regex as re
 import spacy
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
-package_level_resources_path = 'anonymizePy.resources.src'
-
 # ### Install nlp models AUTOMATE THIS PROCESS
 # !NOTE -- you must install this model: https://spacy.io/models/en#en_core_web_lg
 # - command to install model: python -m spacy download en_core_web_lg
@@ -140,7 +138,7 @@ class PIIGenerator:
         ]
 
         # Load optional name resources
-        self.resource_manager.load_resources(package_level_resources_path, ['firstnames_list.txt', 'lastnames_list.txt'], sorted=True)
+        self.resource_manager.load_resources('anonymizePy.resources.src', ['firstnames_list.txt', 'lastnames_list.txt'], sorted=True)
 
         # If first_names was loaded, use it
         first_names = self.resource_manager.get_resources()[0]
@@ -226,6 +224,7 @@ class DataAnonymizer:
         self.use_regex = True
         self.use_resources = True
         self.ignore_columns = []
+        self.package_level_resources_path ='anonymizePy.resources.src'
 
     # ### Method: RegEx String Replacement
     # This method involves defining regular expression patterns, then deploying these RegEx methods to further anonymize the data.
@@ -529,10 +528,10 @@ class DataAnonymizer:
         print("Data loaded. Starting anonymization process.")
 
         # define resources path
-        txt_file_paths = self.resource_manager.get_txt_file_paths(package_level_resources_path)
+        txt_file_paths = self.resource_manager.get_txt_file_paths(self.package_level_resources_path)
 
         # load in resources
-        self.resource_manager.load_resources(package_level_resources_path, txt_file_paths)
+        self.resource_manager.load_resources(self.package_level_resources_path, txt_file_paths)
 
         # run the anonymize script on each column
         anonymized_data = self.anonymize_columns(data)

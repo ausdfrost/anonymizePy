@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "anonymizePy"
-version = "0.1.4"
+version = "0.1.6"
 authors = [
   { name="Aussie D. Frost", email="ausdfrost@gmail.com" },
 ]

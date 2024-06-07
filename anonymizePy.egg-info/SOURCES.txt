@@ -9,3 +9,7 @@ anonymizePy.egg-info/SOURCES.txt
 anonymizePy.egg-info/dependency_links.txt
 anonymizePy.egg-info/requires.txt
 anonymizePy.egg-info/top_level.txt
+anonymizePy/resources/ignore_list.txt
+anonymizePy/resources/states_list.txt
+anonymizePy/resources/src/firstnames_list.txt
+anonymizePy/resources/src/lastnames_list.txt
