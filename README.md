@@ -1,7 +1,7 @@
 # anonymizePy: *anonymize your data with ease*
 
 [![PyPI version](https://img.shields.io/pypi/v/anonymizePy?color=0071B6)](https://pypi.org/project/anonymizePy/)
-[![PyPI downloads](https://img.shields.io/pypi/dm/anonymizepy)](https://pypi.org/project/anonymizePy/)
+[![PyPI pip downloads](https://img.shields.io/pypi/dm/anonymizepy)](https://pypi.org/project/anonymizePy/)
 
 
 ### 🤔 What is anonymizePy?
